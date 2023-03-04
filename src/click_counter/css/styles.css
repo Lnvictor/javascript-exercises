@@ -1,0 +1,45 @@
+body {
+    align-items: center;
+    background: linear-gradient(45deg, #ffffff 0%,#dedee0 100%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+}
+
+.main_section {
+    background: fixed;
+    background-color: rgb(129, 121, 121);
+    height: 150px;
+    width: 150px;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 70px;
+}
+
+.btn {
+    background-color: cadetblue;
+    border-color: black;
+    border-radius: 5px;
+}
+
+.counter_button {
+    padding: 5px;
+
+}
+
+.clear {
+    padding: 2px;
+}
+
+.btn:hover {
+    background-color: blueviolet;
+}
+
+.label-text {
+    font-size: large;
+    color: black;
+}
