@@ -1,0 +1,15 @@
+.major-div{
+    border: 1px solid black;
+    width: 360px;
+    height: 360px;
+    display: grid;
+    column-gap: 0px;
+    row-gap: 0px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.minor-div{
+    border: 1PX solid;
+    width: 120px;
+    height: 120px;
+}
