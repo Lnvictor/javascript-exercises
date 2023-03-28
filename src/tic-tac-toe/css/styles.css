@@ -6,10 +6,15 @@
     column-gap: 0px;
     row-gap: 0px;
     grid-template-columns: repeat(3, 1fr);
+    align-items: center;
 }
 
 .minor-div{
+    display: flex;
     border: 1PX solid;
     width: 120px;
     height: 120px;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
 }
