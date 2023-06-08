@@ -22,3 +22,4 @@ Object.prototype = {k: 1} // tentar setar propriedades read-only gera falha sile
 // Testando propriedades
 console.log(obj2.hasOwnProperty("name")) // true: propriedade propria
 console.log(obj2.hasOwnProperty("id")) // false: propriedade herdada dp prototype
+console.log(obj2.hasProperty("id"))
