@@ -1,10 +1,12 @@
 .car {
     height: 120px;
     width: 250px;
-    background-color: #b60404;
-    border-radius: 50%;
+    background-color: white;
+    border-radius: 15px;
+    border: solid transparent;
     display: inline-block;
     margin-left: 10px;
+    padding: 15px;
     float: left;
     clear: left;
 }
@@ -42,7 +44,7 @@
 }
 
 
-.choose-car-container>.choose-form>form>.car{
+.choose-car-container>.choose-form>form>label>.car{
     margin-bottom: 10px;
     padding: 5px;
     border-radius: 15px;
@@ -51,7 +53,7 @@
     background-color: white;
 }
 
-.choose-car-container>.choose-form>form>.car:hover{
+.choose-car-container>.choose-form>form>label>.car:hover{
     background-color: #939cd2;
     cursor: pointer;
 }
@@ -72,4 +74,23 @@ input[type="submit"]{
 input[type="button"]:hover, input[type="submit"]:hover {
     cursor: pointer;
     background-color: #314cff;
+}
+
+/* HIDE RADIO */
+[type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;   
+    height: 0;
+    left: -9999px;
+  }
+  
+  /* IMAGE STYLES */
+  [type=radio] + img {
+    cursor: pointer;
+  }
+  
+  /* CHECKED STYLES */
+  [type=radio]:checked + img {
+    outline: 2px solid #314cff;
   }
