@@ -18,8 +18,14 @@ function move(element){
     if (newMarginLeft < 1100)
         element.style.marginLeft = newMarginLeft + "px";
     else{
-        alert('acabou o jogo')
-        location.reload()
+        console.log(element.id[3])
+        if (element.id == sessionStorage.getItem('carChoosed')){
+            sessionStorage.setItem('resultadoUrl', 'https://www.opovo.com.br/_midias/png/2020/07/24/750x500/1_baianinho-13114270.png')
+        }
+        else{
+            sessionStorage.setItem('resultadoUrl', 'https://f.i.uol.com.br/fotografia/2021/12/10/163916169061b39f5a2e688_1639161690_3x2_md.jpg')
+        }
+        location.href = './result.html'
     }
 }
 
